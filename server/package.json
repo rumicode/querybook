@@ -1,0 +1,23 @@
+{
+  "name": "rumicode",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "NODE_OPTIONS='--loader ts-node/esm' node --env-file=.env src/main.ts",
+    "start": "node dist/src/main.js",
+    "test": "NODE_OPTIONS='--loader ts-node/esm' node --test src/**/*.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sinclair/typebox": "^0.31.28"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2"
+  }
+}
